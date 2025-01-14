@@ -39,43 +39,42 @@ $produtos = [
         'imagem' => 'produto_d.jpg'
     ]
 ];
-// $data = json_encode($produtos, JSON_UNESCAPED_UNICODE);
-// echo $data;
-// $selectId = $argv[1];
-// if ($selectId == null){
-//     foreach ($produtos as $item) {
-//         if (isset($item['id'])) {
-//             $id = $item['id'];
-//             $nome = $item['nome'];
-//             $descricao = $item['descricao'];
-//             $preco = $item['preco'];
-//             $quantidade = $item['quantidade'];
-//             $categoria = $item['categoria'];
-//             $img = $item['imagem'];
-    
+/* $data = json_encode($produtos, JSON_UNESCAPED_UNICODE);
+    echo $data;
+    $selectId = $argv[1];
+    if ($selectId == null){
+        foreach ($produtos as $item) {
+            if (isset($item['id'])) {
+                $id = $item['id'];
+                $nome = $item['nome'];
+                $descricao = $item['descricao'];
+                $preco = $item['preco'];
+                $quantidade = $item['quantidade'];
+                $categoria = $item['categoria'];
+                $img = $item['imagem'];
+                       
+    echo "Nome: $nome\t\tDescrição: $descricao\tPreço: $preco\nQuantidade: $quantidade\t\tCategoria: $categoria\t\t\tImagem: $img\n\n";
+            }
+        }
+        } else {
+            $itemID = $selectId;
+            foreach ($produtos as $item) {
+                if ($item['id'] == $itemID) {
+                    $id = $item['id'];
+                    $nome = $item['nome'];
+                    $descricao = $item['descricao'];
+                    $preco = $item['preco'];
+                    $quantidade = $item['quantidade'];
+                    $categoria = $item['categoria'];
+                    $img = $item['imagem'];
             
-//             echo "Nome: $nome\t\tDescrição: $descricao\tPreço: $preco\nQuantidade: $quantidade\t\tCategoria: $categoria\t\t\tImagem: $img\n\n";
-//         }
-//     }
-// } else {
-//     $itemID = $selectId;
-//     foreach ($produtos as $item) {
-//         if ($item['id'] == $itemID) {
-//             $id = $item['id'];
-//             $nome = $item['nome'];
-//             $descricao = $item['descricao'];
-//             $preco = $item['preco'];
-//             $quantidade = $item['quantidade'];
-//             $categoria = $item['categoria'];
-//             $img = $item['imagem'];
-    
-//             echo "Nome: $nome\t\tDescrição: $descricao\tPreço: $preco\nQuantidade: $quantidade\t\tCategoria: $categoria\t\t\tImagem: $img\n\n";
-//         }
-//     }
-//     if($itemID < 1 || $itemID > 4){
-//         echo "Este produto não foi cadastrado!\n";
-//     }
-// }
+                    echo "Nome: $nome\t\tDescrição: $descricao\tPreço: $preco\nQuantidade: $quantidade\t\tCategoria: $categoria\t\t\tImagem: $img\n\n";
+                }
+            }
+            if($itemID < 1 || $itemID > 4){
+                echo "Este produto não foi cadastrado!\n";
+            }
+    }*/ 
 $texto = "";
 foreach ($produtos as $item) {
     $id = $item['id'];

@@ -3,8 +3,7 @@ require_once("produtos-model.php");
 class produtos_dao
 {
     public static function retorna_produto(){
-        $product = new produto();
-
+        $product = new produtos();
         $product->setName("Nome");
         $product->setPrice("Preco");
         $product->setDescript("Descricao");
